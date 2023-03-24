@@ -21,8 +21,8 @@ const Nav = () => {
                                   data-bs-toggle="dropdown"> Jobs </Link>
 
                             <div className="dropdown-menu rounded-0 m-0">
-                                <Link to="/" className="dropdown-item"> Job List </Link>
-                                <Link to="/" className="dropdown-item"> Job Detail </Link>
+                                <Link to="/job-list" className="dropdown-item"> Job List </Link>
+                                <Link to="/job-details" className="dropdown-item"> Job Detail </Link>
                             </div>
                         </div>
                         <div className="nav-item dropdown">
