@@ -13,7 +13,8 @@ import JobDetails from "./pages/JobDetails";
 import JobCategory from "./pages/JobCagegory";
 import Testimonial from "./pages/Testimonial";
 import Login from "./pages/auth/Login";
-import Register from "./pages/auth/Register";
+import EmployerRegister from "./pages/auth/EmployerRegister";
+import JobSeekerRegister from "./pages/auth/JobSeekerRegister";
 
 export default function App() {
     return (
@@ -28,7 +29,8 @@ export default function App() {
                     <Route path="testimonial" element={<Testimonial/>}/>
                     <Route path="contact" element={<Contact/>}/>
                     <Route path="login" element={<Login/>}/>
-                    <Route path="register" element={<Register/>}/>
+                    <Route path="employer/register" element={<EmployerRegister/>}/>
+                    <Route path="job-seeker/register" element={<JobSeekerRegister/>}/>
                     <Route path="*" element={<NotFound/>}/>
                 </Route>
             </Routes>

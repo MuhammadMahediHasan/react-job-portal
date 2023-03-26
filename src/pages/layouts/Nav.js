@@ -5,7 +5,8 @@ const Nav = () => {
         <>
             <nav className="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
                 <Link to="/" className="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
-                    <h1 className="m-0 text-primary">JobEntry</h1>
+                    <h1 className="m-0 text-default">e</h1>
+                    <h1 className="m-0 text-primary">Job</h1>
                 </Link>
                 <button type="button" className="navbar-toggler me-4" data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse">
@@ -52,7 +53,7 @@ const Nav = () => {
                                         <p>Login or Register to find the best candidate</p>
                                         <ul className="buttons">
                                             <Link to="/login">Login</Link>
-                                            <Link to="/register">Register</Link>
+                                            <Link to="/employer/register">Register</Link>
                                         </ul>
                                     </div>
                                 </li>
@@ -65,7 +66,7 @@ const Nav = () => {
                                         <p>Login or Register to grab the best opportunity</p>
                                         <div className="buttons">
                                             <Link to="/login">Login</Link>
-                                            <Link to="/register">Register</Link>
+                                            <Link to="/job-seeker/register">Register</Link>
                                         </div>
                                     </div>
                                 </li>
