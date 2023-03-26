@@ -36,10 +36,42 @@ const Nav = () => {
                             </div>
                         </div>
                         <Link to="/contact" className="nav-item nav-link"> Contact </Link>
-                        <Link to="/about" className="nav-item nav-link"> Sign Up or Sign In </Link>
+                        <div className="nav-item dropdown">
+                            <Link to="#"
+                                  className="nav-link dropdown-toggle"
+                                  data-bs-toggle="dropdown">
+                                Sign Up | Sign In
+                            </Link>
+                            <ul className="dropdown-menu rounded-0 m-0 sub-menu auth">
+                                <li>
+                                    <div className="image">
+                                        <img src="/img/manager.png" alt="employer"/>
+                                    </div>
+                                    <div>
+                                        <h3>Employer</h3>
+                                        <p>Login or Register to find the best candidate</p>
+                                        <ul className="buttons">
+                                            <Link to="/login">Login</Link>
+                                            <Link to="/register">Register</Link>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="image">
+                                        <img src="/img/contract.png" alt="candidate"/>
+                                    </div>
+                                    <div>
+                                        <h3>Job seeker</h3>
+                                        <p>Login or Register to grab the best opportunity</p>
+                                        <div className="buttons">
+                                            <Link to="/login">Login</Link>
+                                            <Link to="/register">Register</Link>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <Link to="/" className="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Post A Job<i
-                        className="fa fa-arrow-right ms-3"></i></Link>
                 </div>
             </nav>
         </>

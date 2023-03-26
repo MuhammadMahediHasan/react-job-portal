@@ -1,4 +1,3 @@
-
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -8,68 +7,114 @@ const Home = () => {
 
     return (
         <>
-            {/* Carousel Start */}
-            <div className="container-fluid p-0">
-                <OwlCarousel className='owl-theme owl-carousel header-carousel position-relative'
-                             loop
-                             items={1}
-                >
-                    <div className="owl-carousel-item item position-relative">
-                        <img className="img-fluid" src="/img/carousel-1.jpg" alt=""/>
-                        <div className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                             style={{background: "rgba(43, 57, 64, .5)"}}>
-                            <div className="container">
-                                <div className="row justify-content-start">
-                                    <div className="col-10 col-lg-8">
-                                        <h5 className="display-5 text-white animated slideInDown mb-4">Find The Perfect
-                                            Job That You
-                                            Deserved</h5>
-                                        <p className="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem.
-                                            Ipsum dolor
-                                            at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum
-                                            sea
-                                            elitr.</p>
-                                        <a href="/"
-                                           className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Search
-                                            A
-                                            Job</a>
-                                        <a href="/" className="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Find
-                                            A
-                                            Talent</a>
+            <div className="home-banner">
+                <div className="banner-content">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-sm-12">
+                                <h1>Employer?</h1>
+                                <h2>Find Your Next <span>Talent</span></h2>
+                                <form className="banner-form">
+                                    <div className="row sm-gutters">
+                                        <div className="col-sm-7" style={{transition: '0.5s'}}>
+                                            <div className="form-group">
+                                                <input type="text" name="search"
+                                                       placeholder="Keywords, Profession or Name"
+                                                       className="form-control" autoComplete="off"/>
+                                                <button type="submit">
+                                                    <i className="fa fa-search"></i>
+                                                </button>
+                                                <p className="advance-button">Advance Search</p></div>
+                                            <p className="are-you">
+                                                <a href="/employer/register">Are you Hiring? Post a Job Now.</a>
+                                            </p>
+                                        </div>
+                                        <div className="banner-box fade-in">
+                                            <a className="btn btn-default" href="/jobseeker/register">Drop Your CV</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="/jobseeker/register">
+                                                        <i className="fa fa-sign-in"></i>
+                                                        Sign Up
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/jobseeker/login">
+                                                        <i className="fa fa-sign-in"></i>
+                                                        Sign In
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
-                    <div className="owl-carousel-item item position-relative">
-                        <img className="img-fluid" src="/img/carousel-2.jpg" alt=""/>
-                        <div className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                             style={{background: "rgba(43, 57, 64, .5)"}}>
-                            <div className="container">
-                                <div className="row justify-content-start">
-                                    <div className="col-10 col-lg-8">
-                                        <h1 className="display-3 text-white animated slideInDown mb-4">Find The Best
-                                            Startup Job
-                                            That Fit You</h1>
-                                        <p className="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem.
-                                            Ipsum dolor
-                                            at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum
-                                            sea
-                                            elitr.</p>
-                                        <a href="/"
-                                           className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Search
-                                            A
-                                            Job</a>
-                                        <a href="/" className="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Find
-                                            A
-                                            Talent</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </OwlCarousel>;
+                </div>
             </div>
+            {/* Carousel Start */}
+            {/*<div className="container-fluid p-0">*/}
+            {/*    <OwlCarousel className='owl-theme owl-carousel header-carousel position-relative'*/}
+            {/*                 loop*/}
+            {/*                 items={1}*/}
+            {/*    >*/}
+            {/*        <div className="owl-carousel-item item position-relative">*/}
+            {/*            <img className="img-fluid" src="/img/carousel-1.jpg" alt=""/>*/}
+            {/*            <div className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"*/}
+            {/*                 style={{background: "rgba(43, 57, 64, .5)"}}>*/}
+            {/*                <div className="container">*/}
+            {/*                    <div className="row justify-content-start">*/}
+            {/*                        <div className="col-10 col-lg-8">*/}
+            {/*                            <h5 className="display-5 text-white animated slideInDown mb-4">Find The Perfect*/}
+            {/*                                Job That You*/}
+            {/*                                Deserved</h5>*/}
+            {/*                            <p className="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem.*/}
+            {/*                                Ipsum dolor*/}
+            {/*                                at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum*/}
+            {/*                                sea*/}
+            {/*                                elitr.</p>*/}
+            {/*                            <a href="/"*/}
+            {/*                               className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Search*/}
+            {/*                                A*/}
+            {/*                                Job</a>*/}
+            {/*                            <a href="/" className="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Find*/}
+            {/*                                A*/}
+            {/*                                Talent</a>*/}
+            {/*                        </div>*/}
+            {/*                    </div>*/}
+            {/*                </div>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*        <div className="owl-carousel-item item position-relative">*/}
+            {/*            <img className="img-fluid" src="/img/carousel-2.jpg" alt=""/>*/}
+            {/*            <div className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"*/}
+            {/*                 style={{background: "rgba(43, 57, 64, .5)"}}>*/}
+            {/*                <div className="container">*/}
+            {/*                    <div className="row justify-content-start">*/}
+            {/*                        <div className="col-10 col-lg-8">*/}
+            {/*                            <h1 className="display-3 text-white animated slideInDown mb-4">Find The Best*/}
+            {/*                                Startup Job*/}
+            {/*                                That Fit You</h1>*/}
+            {/*                            <p className="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem.*/}
+            {/*                                Ipsum dolor*/}
+            {/*                                at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum*/}
+            {/*                                sea*/}
+            {/*                                elitr.</p>*/}
+            {/*                            <a href="/"*/}
+            {/*                               className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Search*/}
+            {/*                                A*/}
+            {/*                                Job</a>*/}
+            {/*                            <a href="/" className="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Find*/}
+            {/*                                A*/}
+            {/*                                Talent</a>*/}
+            {/*                        </div>*/}
+            {/*                    </div>*/}
+            {/*                </div>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </OwlCarousel>;*/}
+            {/*</div>*/}
             {/* Carousel End */}
 
 
