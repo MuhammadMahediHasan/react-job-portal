@@ -55,9 +55,7 @@ const Footer = () => {
                     <div className="copyright">
                         <div className="row">
                             <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                                &copy; <a className="border-bottom" href="/">Your Site Name</a>, All Right Reserved.
-
-                                Designed By <a className="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                                &copy; <a className="border-bottom" href="/">eJobs</a>, All Right Reserved.
                             </div>
                             <div className="col-md-6 text-center text-md-end">
                                 <div className="footer-menu">

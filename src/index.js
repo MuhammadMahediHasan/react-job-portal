@@ -15,6 +15,7 @@ import Testimonial from "./pages/Testimonial";
 import Login from "./pages/auth/Login";
 import EmployerRegister from "./pages/auth/EmployerRegister";
 import JobSeekerRegister from "./pages/auth/JobSeekerRegister";
+import {Profile} from "./pages/profile/Profile";
 
 export default function App() {
     return (
@@ -29,6 +30,7 @@ export default function App() {
                     <Route path="testimonial" element={<Testimonial/>}/>
                     <Route path="contact" element={<Contact/>}/>
                     <Route path="login" element={<Login/>}/>
+                    <Route path="profile" element={<Profile/>}/>
                     <Route path="employer/register" element={<EmployerRegister/>}/>
                     <Route path="job-seeker/register" element={<JobSeekerRegister/>}/>
                     <Route path="*" element={<NotFound/>}/>
