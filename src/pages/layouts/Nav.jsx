@@ -6,7 +6,7 @@ const Nav = () => {
             <nav className="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
                 <Link to="/" className="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
                     <h1 className="m-0 text-default">e</h1>
-                    <h1 className="m-0 text-primary">Job</h1>
+                    <h1 className="m-0 text-primary">Jobs</h1>
                 </Link>
                 <button type="button" className="navbar-toggler me-4" data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse">
@@ -33,6 +33,7 @@ const Nav = () => {
                             <div className="dropdown-menu rounded-0 m-0">
                                 <Link to="/job-category" className="dropdown-item"> Job Category </Link>
                                 <Link to="/testimonial" className="dropdown-item"> Testimonial </Link>
+                                <Link to="/profile" className="dropdown-item"> Profile </Link>
                                 <Link to="/404" className="dropdown-item"> 404 </Link>
                             </div>
                         </div>

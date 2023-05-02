@@ -1,7 +1,7 @@
 const JobDetails = () => {
     return (
         <>
-            <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div className="container-xxl text-left py-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div className="container">
                     <div className="row gy-5 gx-4">
                         <div className="col-lg-8">
